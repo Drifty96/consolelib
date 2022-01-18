@@ -364,7 +364,13 @@ console.input = function(inputText)
     inputText = inputText or ''
 
     if (typeof(inputText) == 'string') then
-    	rconsoleprint('@@BLUE@@[ ')
+    	rconsoleprint('@@BLUE@@')
+	rconsoleprint('[')
+	rconsoleprint('@@MAGENTA@@')
+	rconsoleprint('>')
+	rconsoleprint('@@BLUE@@')
+	rconsoleprint('] ')
+	rconsoleprint('@@WHITE@@')
         rconsoleprint(inputText)
         return rconsoleinput()
     else
