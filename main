@@ -21,14 +21,14 @@ end
 
 --Normal Log
 console.log = function(msg)
-    if (typeof(msg) == 'string') then
-        rconsoleprint('@@BLUE@@')
+	rconsoleprint('@@BLUE@@')
 	rconsoleprint('[')
 	rconsoleprint('@@MAGENTA@@')
 	rconsoleprint('>')
 	rconsoleprint('@@BLUE@@')
 	rconsoleprint('] ')
 	rconsoleprint('@@MAGENTA@@')
+    if (typeof(msg) == 'string') then
         rconsoleprint(msg)
         return true
     else
