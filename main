@@ -21,6 +21,13 @@ end
 
 --Normal Log
 console.log = function(msg)
+    	rconsoleprint('@@BLUE@@')
+	rconsoleprint('[')
+	rconsoleprint('@@MAGENTA@@')
+	rconsoleprint('>')
+	rconsoleprint('@@BLUE@@')
+	rconsoleprint('] ')
+	rconsoleprint('@@MAGENTA@@')
     if (typeof(msg) == 'string') then
         rconsoleprint('@@WHITE@@')
         rconsoleprint(msg)
@@ -367,7 +374,7 @@ console.input = function(inputText)
 	rconsoleprint('>')
 	rconsoleprint('@@BLUE@@')
 	rconsoleprint('] ')
-	rconsoleprint('@@WHITE@@')
+	rconsoleprint('@@MAGENTA@@')
     inputText = inputText or ''
 
     if (typeof(inputText) == 'string') then
