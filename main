@@ -21,13 +21,13 @@ end
 
 --Normal Log
 console.log = function(msg)
-	rconsoleprint('@@BLUE@@')
+	rconsoleprint('@@MAGENTA@@')
 	rconsoleprint('[')
-	rconsoleprint('@@MAGENTA@@')
-	rconsoleprint('>')
 	rconsoleprint('@@BLUE@@')
-	rconsoleprint('] ')
+	rconsoleprint('>')
 	rconsoleprint('@@MAGENTA@@')
+	rconsoleprint('] ')
+	rconsoleprint('@@BLUE@@')
     if (typeof(msg) == 'string') then
         rconsoleprint(msg)
         return true
@@ -367,13 +367,13 @@ console.progressbar = function(progression, maxProgression, maxlength, customBar
 end
 
 console.input = function(inputText)
-    	rconsoleprint('@@BLUE@@')
+	rconsoleprint('@@MAGENTA@@')
 	rconsoleprint('[')
-	rconsoleprint('@@MAGENTA@@')
-	rconsoleprint('>')
 	rconsoleprint('@@BLUE@@')
-	rconsoleprint('] ')
+	rconsoleprint('>')
 	rconsoleprint('@@MAGENTA@@')
+	rconsoleprint('] ')
+	rconsoleprint('@@BLUE@@')
     inputText = inputText or ''
 
     if (typeof(inputText) == 'string') then
